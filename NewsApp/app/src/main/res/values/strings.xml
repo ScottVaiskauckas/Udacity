@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">NewsApp</string>
+    <string name="no_articles">We are having difficulty loading news articles.
+    Please try again later.</string>
+    <string name="no_internet_connection">You have no Internet connection.
+    Please try again later.</string>
+    <string name="settings_menu_item">Settings</string>
+    <string name="settings_title">Article Query Settings</string>
+    <string name="search_by_title_label">Search by title</string>
+    <string name="search_by_title_key" translatable="false">article_title</string>
+    <string name="search_by_title_default" translatable="false">Trump</string>
+    <string name="date_hint" translatable="false">mm/dd/yyyy</string>
+    <string name="search_by_date_label">Articles published after</string>
+    <string name="search_by_date_key" translatable="false">article_date</string>
+    <string name="search_by_date_default" translatable="false">01/01/2014</string>
+    <string name="max_len" translatable="false">10</string>
+</resources>

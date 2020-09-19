@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Layout for a single list item that displays an article -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        style="@style/list_item_vertical_linear_layout">
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/list_item_text_view.title"/>
+
+        <TextView
+            android:id="@+id/author"
+            style="@style/list_item_text_view.section"/>
+
+        <TextView
+            android:id="@+id/section"
+            style="@style/list_item_text_view.section"/>
+
+        <TextView
+            android:id="@+id/date_published"
+            style="@style/list_item_text_view"/>
+    </LinearLayout>
+
+</LinearLayout>

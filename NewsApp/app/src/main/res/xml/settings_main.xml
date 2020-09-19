@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/settings_title">
+
+    <EditTextPreference
+        android:defaultValue="@string/search_by_title_default"
+        android:inputType="text"
+        android:key="@string/search_by_title_key"
+        android:selectAllOnFocus="true"
+        android:title="@string/search_by_title_label" />
+
+    <EditTextPreference
+        android:defaultValue="@string/search_by_date_default"
+        android:inputType="date"
+        android:maxLength="@string/max_len"
+        android:hint="@string/date_hint"
+        android:key="@string/search_by_date_key"
+        android:selectAllOnFocus="true"
+        android:title="@string/search_by_date_label" />
+
+</PreferenceScreen>
