@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SongDetailsActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            style="@style/page_text_view"
+            android:text="@string/library"
+            android:id="@+id/library_text_view"/>
+        <View
+            android:layout_width="@dimen/line"
+            android:layout_height="match_parent"
+            android:background="@android:color/black"></View>
+        <TextView
+            style="@style/page_text_view"
+            android:text="@string/queue"
+            android:id="@+id/queue_text_view"/>
+        <View
+            android:layout_width="@dimen/line"
+            android:layout_height="match_parent"
+            android:background="@android:color/black"></View>
+        <TextView
+            style="@style/page_text_view"
+            android:text="@string/details"
+            android:id="@+id/song_details_text_view"/>
+    </LinearLayout>
+
+    <ImageView
+        style="@style/song_details_image_view"
+        android:id="@+id/artwork"/>
+
+    <TextView
+        style="@style/song_details_text_view"
+        android:id="@+id/display_song_name"/>
+
+    <TextView
+        style="@style/song_details_text_view"
+        android:id="@+id/display_artist_name"/>
+
+</LinearLayout>

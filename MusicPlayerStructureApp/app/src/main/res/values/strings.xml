@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MusicalStructureApp</string>
+    <string name="library">Library</string>
+    <string name="details">Details</string>
+    <string name="queue">Queue</string>
+    <string name="menu_item_1">Play</string>
+    <string name="menu_item_2">Add to queue</string>
+    <string name="menu_item_3">Remove from queue</string>
+
+</resources>

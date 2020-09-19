@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:id="@+id/top_menu">
+
+    <TextView
+        style="@style/page_text_view"
+        android:text="@string/library"
+        android:id="@+id/library_text_view"/>
+
+    <View
+        android:layout_width="@dimen/line"
+        android:layout_height="match_parent"
+        android:background="@android:color/black"></View>
+
+    <TextView
+        style="@style/page_text_view"
+        android:text="@string/queue"
+        android:id="@+id/queue_text_view"/>
+
+    <View
+        android:layout_width="@dimen/line"
+        android:layout_height="match_parent"
+        android:background="@android:color/black"></View>
+
+    <TextView
+        style="@style/page_text_view"
+        android:text="@string/details"
+        android:id="@+id/song_details_text_view"/>
+
+    </LinearLayout>
+
+    <ListView
+        style="@style/list_view_style"
+        android:id="@+id/list"
+        android:layout_below="@id/top_menu"/>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_menu"
+        android:layout_alignParentBottom="true">
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/line"
+            android:background="@android:color/black"
+            android:id="@id/bottom_line"></View>
+
+        <ImageView
+            style="@style/track_image_view"
+            android:id="@+id/now_playing_album_art"
+            android:layout_below="@+id/bottom_line"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toRightOf="@+id/now_playing_album_art">
+
+            <TextView
+                style="@style/track_text_view"
+                android:id="@+id/now_playing_song_name_text_view"/>
+
+            <TextView
+                style="@style/track_text_view"
+                android:id="@+id/now_playing_artist_name_text_view"/>
+
+        </LinearLayout>
+
+        <ImageButton
+            style="@style/transport_control_style"
+            android:id="@+id/transport_control"
+            android:src="@drawable/baseline_play_arrow_black_24"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
